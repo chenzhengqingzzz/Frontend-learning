@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 登录框的初始样式 */
+        .login-box {
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            transition: all 0.5s;
+            /* 设置过渡效果，时长为 0.5 秒 */
+        }
+
+        /* 鼠标悬停时的样式 */
+        .login-box:hover {
+            transform: scale(1.2);
+            /* 设置放大效果，放大至原来的 120% */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <form>
+            <label>用户名:</label>
+            <input type="text" name="username" />
+            <br />
+            <label>密码:</label>
+            <input type="password" name="password" />
+            <br />
+            <input type="submit" value="登录" />
+        </form>
+    </div>
+
+</body>
+
+</html>

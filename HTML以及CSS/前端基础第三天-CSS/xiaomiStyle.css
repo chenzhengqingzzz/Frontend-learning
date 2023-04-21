@@ -1,0 +1,13 @@
+a {
+    display: block;
+    width: 230px;
+    height: 40px;
+    background-color: #A19C9A;
+    color: white;
+    text-indent: 1em;
+    text-decoration: none;
+    line-height: 40px;
+}
+a:hover {
+    background-color: #ED702E;
+}

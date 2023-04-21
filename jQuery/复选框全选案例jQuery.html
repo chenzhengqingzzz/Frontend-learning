@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jQuery3.6.3.js"></script>
+</head>
+<body>
+    <div>
+        <input type="checkbox" class="checkall" name="" id="">全选
+        <input type="checkbox" class="checkbox" name="" id="">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <input type="checkbox" class="checkall" name="" id="">全选
+    </div>
+    <script>
+        $(function(){
+            // 全选对单选
+            $('.checkall').change(function(){
+                $('.checkbox, .checkall').prop('checked', $(this).prop('checked'))
+            })
+
+            // 单选对全选
+            $('.checkbox').change(function(){
+                // if(小复选框被选中的个数 === 所有小复选框的个数){
+                //     选中全选按钮
+                // }else{
+                //     不选中全选按钮
+                // }
+                if($('.checkbox:checked').length == $('.checkbox').length){
+                    $('.checkall').prop('checked', true)
+                }else{
+                    $('.checkall').prop('checked', false)
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>axios 发送AJAX请求</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <button>GET</button>
+    <button>POST</button>
+    <button>AJAX</button>
+    <script>
+        const btns = document.querySelectorAll('button')
+        btns[0].addEventListener('click', () => {
+
+            // // 配置baseURL
+            // axios.defaults.baseURL = 'http://127.0.0.1:8000'
+
+            // GET请求
+            axios.get('http://127.0.0.1:8000/axios-server', {
+                // url参数
+                params: {
+                    id: 100,
+                    vip: 7
+                },
+                // 设置请求头信息
+                headers: {
+                    name: 'czq',
+                    age: 21
+                },
+            }).then((response) => {
+                // 数据的返回与处理 jQuery是回调函数，axios则是基于promise
+                console.log(response);
+            })
+        })
+        btns[1].addEventListener('click', () => {
+            // POST请求
+            axios.post('http://127.0.0.1:8000/axios-server', {
+                    // 请求体
+                    username: 'admin',
+                    password: 'admin'
+                } ,{
+                    // url
+                    params: {
+                        id: 200,
+                        vip: 9,
+                    },
+                    // 请求头信息
+                    headers: {
+                        name: 'czq',
+                        age: 21
+                    },
+                }).then((response) => {
+                    console.log(response.data);
+                })
+        })
+        btns[2].addEventListener('click', () => {
+            // axios函数发送请求 简便轻快
+            axios({
+                // 请求方法
+                method: 'POST',
+                // url
+                url: 'http://127.0.0.1:8000/axios-server', 
+                // url参数
+                params: {
+                    id: 300,
+                    vip: 10,
+                },
+                // 头信息
+                headers: {
+                    a: 100, 
+                    b: 200
+                },
+                // 请求体参数
+                data: {
+                    username: 'admin',
+                    password: 'admin'
+                }
+            }).then((response) => {
+                // 响应状态码
+                console.log(response.status);
+                // 响应状态字符串
+                console.log(response.statusText);
+                // 响应头信息
+                console.log(response.headers);
+                // 响应体
+                console.log(response.data);
+            })
+        })
+    </script>
+</body>
+
+</html>

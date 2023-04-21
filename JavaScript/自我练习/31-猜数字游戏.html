@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const randomInt = (min, max) => {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min
+        }
+        const random = randomInt(0, 11)
+        
+        while(true){// 死循环
+            // debugger
+            var sign = prompt('请输入您想猜的数字(0~10)')
+            if(sign > random){
+                alert('猜大了，继续猜');
+                continue
+            }else if(sign < random){
+                alert('猜小了，继续猜');
+                continue
+            }else{
+                alert('恭喜你，猜对了')
+                break; //退出整个循环
+            }
+        }
+
+    </script>
+</head>
+<script>
+
+</script>
+
+<body>
+
+</body>
+
+</html>

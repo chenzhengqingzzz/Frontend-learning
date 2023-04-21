@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arrStus = ['小白', 12, true, 29.9]
+        for (var i = 0; i < arrStus.length; i++) {
+            console.log(arrStus[i]);
+        }
+        console.log('========');
+
+        //map方法遍历数组并且生成一个新数组
+        var newArr = arrStus.map((item) => {
+            return item
+        })
+        console.log('newArr ======> ' + newArr);
+        console.log('================');
+
+        var countArr = [2, 5, 1, 7, 4, 10]
+        var sum = 0;
+        var avg = 0;
+        countArr.push(5)
+        for (var i = 0; i < countArr.length; i++) {
+            sum = sum + countArr[i];
+        }
+        console.log(sum);
+        for (var i = 0; i < countArr.length; i++) {
+            sum = sum + countArr[i]
+            avg = sum / countArr.length
+        }
+
+        console.log(avg);
+        console.log(countArr);
+
+        var newArr1 = countArr.map((max, index) => {
+
+            // debugger
+            if (countArr[index] > countArr[index]) {
+                max = countArr[index]
+
+            } else {
+                max = countArr[index]
+
+            }
+
+            return max
+        })
+        console.log(newArr1);
+        console.log('==============');
+
+        var arr2 = ['red', 'green', 'blue', 'pink']
+        var str2 = '';
+        for (var i = 0; i < arr2.length; i++) {
+            str2 += arr2[i] + '|'
+        }
+        console.log(str2);
+        console.log('=================');
+
+        var arr3 = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7]
+        var newArr2 = arr3.map((item, index) => {
+            // debugger
+
+            if (arr3[index] > 10) {
+                return item
+            }
+
+        })
+        console.log(newArr2);
+        //方法体里面的语句则是过滤条件，符合条件的东西才会被过滤到新数组中
+        const newArr3 = newArr2.filter((item) => {
+            return item != undefined
+        })
+        console.log(newArr3);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

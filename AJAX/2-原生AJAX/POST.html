@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX POST请求</title>
+    <style>
+        #result {
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <button>点击发送POST请求</button>
+    <div id="result"></div>
+    <script>
+        // 获取button元素
+        const btn = document.querySelector('button')
+        const result = document.querySelector('div')
+        btn.addEventListener('click', () => {
+            const xhr = new XMLHttpRequest()
+            xhr.open('POST', 'http://127.0.0.1:8000/server')
+            xhr.send('a=100&b=200&c=300')
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4){
+                    if(xhr.status >= 200 && xhr.status < 300){
+                        result.innerHTML = xhr.response
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

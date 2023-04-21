@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jQuery3.6.3.js"></script>
+</head>
+<body>
+    <div class="father">
+        <div class="son">儿子</div>
+    </div>
+    <div class="nav">
+        <p>我是屁</p>
+        <div>
+            <p>我是p</p>
+        </div>
+    </div>
+    <script>
+        // 注意一下都是方法 带括号
+        $(function(){
+            // 1.父 parent()
+            console.log($('.son').parent())
+            // 2.子
+            console.log($('.father').children());
+            // $('.nav').children('p').css('color', 'red')
+            $('.nav').find('p').css('color', 'red')
+            // 3.兄
+        })
+    </script>
+</body>
+</html>

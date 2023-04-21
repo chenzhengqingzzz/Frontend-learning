@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jQuery3.6.3.js"></script>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script>
+        // 存放颜色的数组
+        var arr = ['red', 'green', 'blue']
+        var sum = 0
+        $('div').css('color', 'red')
+        // 如果针对同一类元素做不同操作，需要用到遍历元素（类似for，但是比for强大）
+        $('div').each(function(index, domEle){
+            // 回调函数第一个参数一定是索引号 可以自己指定索引号名称
+            console.log(index);
+            // 回调函数的第二个参数一定是dom元素对象
+            console.log(domEle);
+            // domEle.css('color') dom对象没有css方法
+            $(domEle).css('color', arr[index])
+            
+            //转换成数值型 
+            sum += parseInt($(domEle).text())
+
+        })
+        console.log(sum);
+    </script>
+</body>
+</html>

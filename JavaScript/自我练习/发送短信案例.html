@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    手机号码：<input type="number" name="" id=""> <button>发送</button>
+    <script>
+        var send = document.querySelector('button');
+        send.addEventListener('click', () => {
+            var limit = 5;
+            if (send.disabled = true) {
+                !send.disabled;
+                var timer = setInterval(() => {
+                    send.innerHTML = '还剩' + limit-- + '秒再次点击';
+                    if (limit == -1) {
+                        send.disabled = false;
+                        send.innerHTML = '发送';
+                        clearInterval(timer);
+                    }
+                }, 1000);
+            }
+        })
+
+        // //另一种实现思路：
+        // var send = document.querySelector('button');
+        // var limit = 5;
+        // send.addEventListener('click', () => {
+        //     send.disabled = true;
+        //     var timer = setInterval(() => {
+        //         if (limit == 0) {
+        //             //清除定时器和复原按钮
+        //             clearInterval(timer);
+        //             send.disabled = false;
+        //             send.innerHTML = '发送';
+        //             limit = 5 //重新开始
+        //         }else{
+        //             send.innerHTML = '还剩下' + limit + '秒再次点击';
+        //             limit--;
+        //         }
+        //     }, 1000);
+        // })
+    </script>
+</body>
+
+</html>

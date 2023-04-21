@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+</head>
+<body>
+    <h1>逊</h1>
+    <button>点击获取用户数据</button>
+    <script>
+        const btn = document.querySelector('button')
+        btn.addEventListener('click', () => {
+            const xhr = new XMLHttpRequest()
+            // 因为这里是满足同源策略的，所以url可以简写
+            xhr.open('GET', '/data')
+            // 发送
+            xhr.send()
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === 4) {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        console.log(xhr.response);
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

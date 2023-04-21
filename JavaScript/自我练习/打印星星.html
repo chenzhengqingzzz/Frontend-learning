@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str1 = '';
+        for(var i = 1; i <= 5; i++){
+            str1 = str1 + '⭐️'
+        }
+        console.log(str1);
+        console.log('==================');
+
+        var str2 = '';
+        for(var i = 1; i <= 5; i ++){ //外层循环负责打印五行
+            
+            for(var j = 1; j <= 5; j++){ //里层循环负责一行打印五个星星
+                str2 = str2 + '⭐️'
+            }
+            // 如果一行打印完毕，五个星星就要另起一行
+            str2 = str2 + '\n'
+        }
+        console.log(str2);
+        console.log('==================');
+
+        var str3 = '';
+        var row = prompt('需要打印几行⭐️？')
+        var column = prompt('需要打印几列⭐️？')
+        for(var i = 1; i<= row; i++){
+            for(j = 1; j <= column; j ++){
+                str3 = str3 + '⭐️'
+            }
+            str3 = str3 + '\n'
+        }
+        console.log(str3);
+        console.log('==================');
+        var str4 = '';
+        var inputData1 = prompt('最顶行需要几个⭐️？')
+        for(var i = 1; i <= inputData1; i++){
+            for(var j = i ; j <= inputData1; j++){
+                str4 = str4 + '⭐️';
+            }
+            str4 = str4 + '\n';
+        }
+        console.log(str4);
+        console.log('==================');
+
+        var str5 = '';
+        var inputData2 = prompt('最底行需要几个⭐️？')
+        for(var i = 1; i <= inputData2; i++){
+            for(var j = 1; j <= i; j++){
+                str5 = str5 + '⭐️'
+            }
+            str5 = str5 + '\n'
+        }
+        console.log(str5);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <button class="set">存储数据</button>
+    <button class="get">获取数据</button>
+    <button class="remove">删除数据</button>
+    <button class="clear">清空所有数据</button>
+    <script>
+        var ipt = document.querySelector('input')
+        var set = document.querySelector('.set')
+        set.addEventListener('click', () => {
+            // 当我们点击了之后就可以把表单的值存储过来
+            // var val = ipt.value
+            sessionStorage.setItem('username', ipt.value)
+        })
+        var get = document.querySelector('.get')
+        get.addEventListener('click', () => {
+            // 当我们点击了之后就可以把表单里面的值获取过来
+            console.log(sessionStorage.getItem('username'))
+        })
+        var remove = document.querySelector('.remove')
+        remove.addEventListener('click', () => {
+            // 当我们点击了之后就可以根据键把表单中的数据删除
+            sessionStorage.removeItem('username')
+        })
+        var clear = document.querySelector('.clear')
+        clear.addEventListener('click', () => {
+            sessionStorage.clear()
+        })
+    </script>
+</body>
+</html>

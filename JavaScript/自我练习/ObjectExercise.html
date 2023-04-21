@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Computer(color, weight, brand, type){
+            this.color = color;
+            this.weight = weight;
+            this.brand = brand;
+            this.type = type;
+            this.watchMovie = function(movieName){
+                console.log(this.color + this.weight + 'kg的' + this.brand + this.type + '正在看' + movieName);
+            }
+            this.listenMusic = function(musicName){
+                console.log(this.color + this.weight + 'kg的' + this.brand + this.type + '正在听' + musicName);
+            }
+            this.playGame = function(game){
+                return console.log(this.color + this.weight + 'kg的' + this.brand + this.type + '正在玩儿' + game);
+            }
+            this.writeCode = function(languageName){
+                console.log(this.color + this.weight + 'kg的' + this.brand + this.type + '正在写' + movieName)
+            }
+        }
+        var com1 = new Computer('红色', 1.5, '台式机', '微星')
+        com1.playGame('英雄联盟')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

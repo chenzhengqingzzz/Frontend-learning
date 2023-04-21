@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            background-color: pink;
+        }
+        span {
+            position: absolute;
+            left: 0;
+            top: 300px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <span>逆天</span>
+    <button>点我让逆天起飞</button>
+    <script>
+        function animate(obj, target) {
+            // 给不同的元素指定了不同的定时器 避免了用var直接在内存开辟空间
+            // 当我们不断点击按钮，这个元素的速度会越来越快，因为开启了太多的定时器
+            // 解决方案：让我们元素只有一个定时器
+            // 先清除以前的定时器，只保留当前的一个定时器执行
+            clearInterval(obj.moveTimer)
+            obj.moveTimer = setInterval(() => {
+                if (obj.offsetLeft >= target) {
+                    clearInterval(moveTimer)
+                }
+                obj.style.left = obj.offsetLeft + 1 + 'px'
+            }, 30);
+        }
+        var div = document.querySelector('div');
+        var span = document.querySelector('span');
+        var button = document.querySelector('button');
+        animate(div, 300)
+        button.addEventListener('click', () => {
+            animate(span, 200)
+        })
+    </script>
+</body>
+
+</html>

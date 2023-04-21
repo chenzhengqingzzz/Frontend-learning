@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            border: 1px solid skyblue;
+        }
+        th, td {
+            border: 1px solid red;
+            color: black;
+            padding: 2px;
+        }
+        th {
+            background-color: skyblue;
+            font-size: 16px;
+            padding: 10px;
+            color: #fff;
+        }
+        td {
+            font-size: 14px;
+        }
+        tbody tr {
+            background-color: #c0c0c0;
+        }
+        tbody tr :hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" id="j_cbAll">
+                    </th>
+                    <th>商品</th>
+                    <th>价格</th>
+                </tr>
+            </thead>
+            <tbody id="j_tb">
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>iPhone8</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>iPad Pro</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>iPad Air</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>Apple Watch</td>
+                    <td>2000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // 1.全选和取消全选
+        // 获取元素
+        var checkAll = document.getElementById('j_cbAll');
+        var checks = document.getElementById('j_tb').querySelectorAll('input');
+        // 注册事件
+        
+        // 全选按钮影响下面的小按钮
+        checkAll.onclick = () => {
+            for(var i = 0; i < checks.length; i++){
+                checks[i].checked = checkAll.checked
+            }
+        }
+        // 下面的小按钮影响全选按钮
+        for(var i = 0; i < checks.length; i++){
+            checks[i].onclick = () => {
+                var flag = true;
+                // 每次点击下面的复选框都要循环检查这四个小按钮是否全被选中
+                for(var i = 0; i < checks.length; i++){
+                    
+                    // 在页面第一次打开的时候，所有按钮的checked属性都默认为false
+                    // 如果此时点击一次，则是选中按钮，if再进行取反就是false，则不会执行if语法
+                    // 所以下面的if翻译过来就是：当其中有一个按钮没有被选中的时候
+                    if(!checks[i].checked){
+                        flag = false;
+                        break;// 只要有一个按钮的check为false，全选按钮就永远不会被选上 后面的就不用判断
+                    }
+                    
+                }
+                checkAll.checked = flag
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //利用charAt()遍历这个字符串
+        //把每个字符都存储给对象，如果对象没有该属性，则为1，如果存在就加一
+        //遍历对象，得到最大值和该字符
+        var str = 'abcoefoxyozzopp';
+        var o = {};
+        //遍历字符串
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i); // 将所有字符串拆分出来存到chars这个变量里
+            if (o[chars]) { //将整个字符串中的每一个字符拿来判断 o.[chars]是value
+                o[chars]++
+            } else {
+                o[chars] = 1; //不存在则赋值为1
+            }
+        }
+        console.log(o);
+        //遍历刚才的o对象
+        var max = 0;
+        var ch = '';
+        for (var k in o) {
+            //k得到的是key
+            //o[k] 得到的是value
+            if (o[k] > max) {
+                max = o[k]
+                ch = k; //将最大值的key存进去
+            }
+        }
+        console.log('出现次数最多的字符是：' + ch + ',出现次数为：' + max)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

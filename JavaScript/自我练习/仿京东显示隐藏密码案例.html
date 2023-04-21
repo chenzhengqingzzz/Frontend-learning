@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 此做法为绑定父子关系 子绝父相 */
+            position: relative;
+            width: 400px;
+            /* 只保留这个盒子的下边框 solid则是指定其颜色 */
+            border-bottom: 1px solid #ccc;
+            /*  这个则是和浏览器此时的边缘做比较 auto最佳 */
+            margin: 100px auto;
+        }
+        .box input {
+            width: 370px;
+            height: 30px;
+            /* 隐藏input边框 */
+            border: 0;
+            /* 去掉选中框 */
+            outline: none;
+        }
+        /* 通过css手动缩小图片 */
+        .box img {
+            /* 调整图片位置 */
+            /* 此做法为绑定父子关系 子绝父相 */
+            position: absolute;
+            top: 10px;
+            right: 2px;
+            width: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <label for="">
+            <!-- 闭眼图片 -->
+            <img src="./images/close.png" alt="" id="eye">
+        </label>
+        <input type="password" name="" id="pwd">
+    </div>
+    <script>
+        // 1.获取元素
+        var eye = document.getElementById('eye');
+        var pwd = document.getElementById('pwd');
+
+        // 2. 绑定事件 处理程序
+        var flag = true;
+
+        eye.onclick = () => {
+            if (flag) {
+                pwd.type = 'text';
+                eye.src = './images/open.png';
+                flag = !flag;
+            }else{
+                pwd.type = 'password';
+                eye.src = './images/close.png'
+                flag = !flag;
+            }
+        }
+
+    </script>
+</body>
+</html>

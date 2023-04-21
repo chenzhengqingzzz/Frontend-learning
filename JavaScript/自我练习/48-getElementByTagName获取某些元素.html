@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>逊1</li>
+        <li>逊2</li>
+        <li>逊3</li>
+        <li>逊4</li>
+        <li>逊5</li>
+    </ul>
+
+    <ol id="a">
+        <li>逊1</li>
+        <li>逊2</li>
+        <li>逊3</li>
+        <li>逊4</li>
+        <li>逊5</li>
+    </ol>
+    <script>
+        // 返回的是 获取过来元素对象的集合 以伪数组的形式存储
+        var test = document.getElementsByTagName('li');
+        console.log(test); //伪数组
+        console.log(typeof test); //object
+        console.log(test[0]);
+        // 我们想要依次打印里面的元素对象我们可以采取遍历的方式
+        for (var i = 0; i < test.length; i++) {
+            console.log(test[i]);
+        }
+
+        // 如果页面中只有一个li 返回还是伪数组的形式
+        // 如果页面中没有这个元素 返回的是空的伪数组的形式
+
+        // var olTag = document.getElementsByTagName('ol');//[ol]
+        // console.log(olTag.getElementsByTagName('li')); //伪数组不能作为父元素 报错
+        // console.log((olTag[0].getElementsByTagName('li'))); //必须指明数组中的那个元素 这个才是对的
+
+        // 开发中常用的通过父元素获取所有子元素的写法
+        var olTag = document.getElementById('a');
+        console.log(olTag.getElementsByTagName('li'));
+    </script>
+</body>
+
+</html>

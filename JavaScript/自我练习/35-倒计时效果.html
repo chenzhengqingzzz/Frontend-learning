@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function countDown(userTime) {
+            var nowTime = +new Date() //不传参返回的是当前时间减去1970的毫秒数
+            var userMileTile = +new Date(userTime) // 传参意味着将输入的参数进行时间戳计算
+            var countDownTime = (userMileTile - nowTime) / 1000 //转换为秒数
+            d = parseInt(countDownTime / 60 / 60 / 24); //计算天数
+            d = d > 10 ? d : '0' + d
+            h = parseInt(countDownTime / 60 / 60 % 24); //计算小时
+            h = h > 10 ? h : '0' + h
+            m = parseInt(countDownTime / 60 % 60); //计算分数
+            m = m > 10 ? m : '0' + m
+            s = parseInt(countDownTime % 60); //计算当前秒数
+            s = s > 10 ? s : '0' + s
+            return d + '天' + h + '时' + m + '分' + s + '秒'
+        }
+        console.log(countDown('2022-12-20 18:00:00'));
+        
+    </script>
+    </head>
+
+<body>
+
+</body>
+
+</html>

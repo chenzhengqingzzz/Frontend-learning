@@ -1,0 +1,30 @@
+.title {
+    text-align: center;
+}
+.details {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+.image {
+    text-align: center;
+}
+.weatherURL {
+    font-size: 12px;
+    text-decoration: none;
+}
+.search {
+    width: 170px;
+    height: 12px;
+}
+.btn {
+    font-weight: 700;
+}
+.text {
+    text-indent: 2em;
+}
+.footer {
+    color: grey;
+    font-size: 12px;
+    text-indent: 2em;
+}
