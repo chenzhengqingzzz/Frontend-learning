@@ -26,7 +26,7 @@
 
 ​					网页是由网页元素组成的，这些元素是利用html标签描述出来，然后通过浏览器解析来显示给用户的
 
-![image-20221011165803806](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011165803806.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011165803806.png" alt="image-20221011165803806" />
 
 ​									前端人员开发编码 ---> 浏览器显示代码（解析、渲染） ---> 生成最后的Web页面
 
@@ -42,7 +42,7 @@
 
 ​				浏览器内核（渲染引擎）：负责读取网页内容、整理信息，计算网页的显示方式并显示页面
 
-![image-20221011171141744](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011171141744.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011171141744.png" alt="image-20221011171141744" />
 
 ​				目前国内一般浏览器都会采用Webkit/Blink内核，如360、UC、QQ、搜狗等
 
@@ -72,11 +72,11 @@
 
 ​		主要包括结构(Structure)、表现(Persentation)和行为(Behavior)三个方面
 
-![image-20221011172252398](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011172252398.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011172252398.png" alt="image-20221011172252398" />
 
 ​		Web标准提出的最佳体验方案：结构、样式、行为相分离
 
-![image-20221011172938438](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011172938438.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011172938438.png" alt="image-20221011172938438" />
 
 ​		简单理解：结构写到HTML文件中，表现写到CSS文件中，行为写到JavaScript文件中
 
@@ -143,7 +143,7 @@
 
 #### 	2.2 基本结构标签总结
 
-![image-20221011180901423](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011180901423.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221011180901423.png" alt="image-20221011180901423" />
 
 ### 3. 开发工具
 
@@ -211,7 +211,7 @@
 
 ​		**根据标签的语义，在合适的地方给一个最为合理的标签，可以让页面结构更清晰**
 
-![image-20221012172910840](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221012172910840.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221012172910840.png" alt="image-20221012172910840" />
 
 #### 	4.2 标题标签 <h1> ~ <h6>(重要)
 
@@ -243,7 +243,7 @@
     <h6>具体效果刷新见。</h6>
 ```
 
-![image-20221012173750497](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221012173750497.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221012173750497.png" alt="image-20221012173750497" />
 
 #### 	4.3 段落和换行标签（重要）
 
@@ -260,7 +260,7 @@
 
 ​			2. 段落和段落之间保有空隙
 
-![image-20221012175046338](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221012175046338.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221012175046338.png" alt="image-20221012175046338" />
 
 ​		在HTML中，一个段落中的文字会从左到右依次排列，直到浏览器窗口的右端，然后才自动换行。如果希望某段文本强制换行显示，就需要使用换行标签<br/>
 
@@ -269,7 +269,7 @@
 <!-- 单词break的缩写，意为打断、换行 -->
 ```
 
-![image-20221012175320364](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221012175320364.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221012175320364.png" alt="image-20221012175320364" />
 
 #### 4.4 文本格式化标签
 
@@ -322,7 +322,7 @@
 </html>
 ```
 
-![image-20221013175655180](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221013175655180.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221013175655180.png" alt="image-20221013175655180" />
 
 #### 4.6 图像标签和路径（重点）
 
@@ -374,7 +374,7 @@
 
 ​						以**引用文件所在位置**为参考基础，而建立出的目录路径 这里简单来说是图片相对于HTML页面的位置
 
-![image-20221013195020849](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221013195020849.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221013195020849.png" alt="image-20221013195020849" />
 
 ​					2. 绝对路径
 
@@ -438,7 +438,7 @@
 
 ​	在HTML页面中，一些特殊的符号很难或者不方便直接使用，此时我们就可以使用下面的字符来替代
 
-![image-20221015170340178](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221015170340178.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221015170340178.png" alt="image-20221015170340178" />
 
 ## （三）HTML标签（下）
 
@@ -462,7 +462,7 @@
 </table>
 ```
 
-![image-20221016145056656](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221016145056656.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221016145056656.png" alt="image-20221016145056656" />
 
 ​		1. <table></table>是由于定义**表格**的标签
 
@@ -488,13 +488,13 @@
 </table>
 ```
 
-![image-20221016145304342](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221016145304342.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221016145304342.png" alt="image-20221016145304342" />
 
 #### 1.4 表格属性
 
 ​	表格标签这部分我们实际开发不常用，后面通过CSS来设置
 
-![image-20221017150909578](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221017150909578.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221017150909578.png" alt="image-20221017150909578" />
 
 #### 1.5 表格结构标签
 
@@ -528,7 +528,7 @@
 
 ​		3. 删除多余单元格
 
-![image-20221017153813496](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221017153813496.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221017153813496.png" alt="image-20221017153813496" />
 
 ### 2. 列表标签
 
@@ -538,7 +538,7 @@
 
 ​	根据使用情景不同，列表可以分为三大类：**无序列表、有序列表、自定义列表**
 
-![image-20221017154402891](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221017154402891.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221017154402891.png" alt="image-20221017154402891" />
 
 #### 2.1 无序列表（重点）
 
@@ -604,7 +604,7 @@
 
 ​		自定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号
 
-![image-20221017161032648](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221017161032648.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221017161032648.png" alt="image-20221017161032648" />
 
 #### 2.4 列表总结
 
@@ -626,7 +626,7 @@
 
 ​	在HTML中，一个完整的表单通常由**表单域、表单控件（也被称为表单元素）**和**提示信息**三个部分构成
 
-![image-20221024185245388](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221024185245388.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221024185245388.png" alt="image-20221024185245388" />
 
 #### 3.3 表单域
 

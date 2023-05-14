@@ -123,11 +123,11 @@ app.listen(8000, () => {
 
 3. 在调试窗口查看到请求报文和响应报文相关信息
 
-![image-20230220151158020](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220151158020.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220151158020.png" alt="image-20230220151158020" />
 
-![image-20230220151228065](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220151228065.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220151228065.png" alt="image-20230220151228065" />
 
-![image-20230220151243605](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220151243605.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220151243605.png" alt="image-20230220151243605" />
 
 **AJAX请求的基本操作**
 
@@ -232,7 +232,7 @@ app.listen(8000, () => {
 </html>
 ```
 
-![image-20230220155129337](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220155129337.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220155129337.png" alt="image-20230220155129337" />
 
 **url传参：**
 
@@ -252,11 +252,13 @@ xhr.send('a=100&b=200&c=300')
 
 
 
-GET:![image-20230220155609894](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220155609894.png)
+GET:
+
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220155609894.png" alt="image-20230220155609894" />
 
 POST:
 
-![image-20230220163616410](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220163616410.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220163616410.png" alt="image-20230220163616410" />
 
 **请求头自定义请求头**
 
@@ -289,7 +291,7 @@ client端：
             xhr.setRequestHeader('name', 'czq')
 ```
 
-![image-20230220165336985](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220165336985.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220165336985.png" alt="image-20230220165336985" />
 
 **服务端响应JSON数据**
 
@@ -372,7 +374,7 @@ client端
 </html>
 ```
 
-![image-20230220172332356](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220172332356.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230220172332356.png" alt="image-20230220172332356" />
 
 **IE浏览器缓存问题**
 
@@ -458,9 +460,9 @@ app.get('/delay', (request, response) => {
 
 收不到服务器响应：
 
-![image-20230221121451663](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221121451663.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221121451663.png" alt="image-20230221121451663" />
 
-![image-20230221121530054](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221121530054.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221121530054.png" alt="image-20230221121530054" />
 
 断网时做出的响应：
 
@@ -468,7 +470,7 @@ app.get('/delay', (request, response) => {
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221121625798.png" alt="image-20230221121625798" style="zoom:50%;" />
 
-![image-20230221121639933](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221121639933.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221121639933.png" alt="image-20230221121639933" />
 
 **AJAX取消请求**
 
@@ -562,11 +564,11 @@ client端：
 </html>
 ```
 
-![image-20230221143037214](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221143037214.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221143037214.png" alt="image-20230221143037214" />
 
 **jQuery使用ajax**
 
-​	![image-20230221145819379](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221145819379.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221145819379.png" alt="image-20230221145819379" />
 
 server端：
 
@@ -668,23 +670,23 @@ client端
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150038759.png" alt="image-20230221150038759" style="zoom:50%;" />
 
-![image-20230221150052108](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150052108.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150052108.png" alt="image-20230221150052108" />
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150106945.png" alt="image-20230221150106945" style="zoom:50%;" />
 
 ​	**POST请求**
 
-![image-20230221150153991](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150153991.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150153991.png" alt="image-20230221150153991" />
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150205766.png" alt="image-20230221150205766" style="zoom:50%;" />
 
-![image-20230221150214380](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150214380.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221150214380.png" alt="image-20230221150214380" />
 
 **通用型方法AJAX**
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221151504366.png" alt="image-20230221151504366" style="zoom:50%;" />
 
-![image-20230221151444603](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221151444603.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221151444603.png" alt="image-20230221151444603" />
 
 **axios发送AJAX请求**
 
@@ -814,23 +816,23 @@ client端：
 
 ​	**GET**
 
-![image-20230221154902153](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221154902153.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221154902153.png" alt="image-20230221154902153" />
 
-![image-20230221154920213](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221154920213.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221154920213.png" alt="image-20230221154920213" />
 
 ​	**POST**
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221155023170.png" alt="image-20230221155023170" style="zoom:50%;" />
 
-![image-20230221155034112](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221155034112.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221155034112.png" alt="image-20230221155034112" />
 
 **axios函数发送请求**
 
-![image-20230221155950590](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221155950590.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221155950590.png" alt="image-20230221155950590" />
 
-![image-20230221160000065](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221160000065.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221160000065.png" alt="image-20230221160000065" />
 
-![image-20230221160011784](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221160011784.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221160011784.png" alt="image-20230221160011784" />
 
 **fetch方法发送请求**
 
@@ -893,11 +895,11 @@ app.all('/fetch-server', (request, response) => {
 
 ​	调试结果
 
-![image-20230221161603926](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221161603926.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221161603926.png" alt="image-20230221161603926" />
 
-![image-20230221161625519](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221161625519.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221161625519.png" alt="image-20230221161625519" />
 
-![image-20230221161634754](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221161634754.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221161634754.png" alt="image-20230221161634754" />
 
 ## 2. 跨域
 
@@ -970,7 +972,7 @@ client端：
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221163426258.png" alt="image-20230221163426258" style="zoom:50%;" />
 
-![image-20230221163453705](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221163453705.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230221163453705.png" alt="image-20230221163453705" />
 
 ### 2.2 如何解决跨域
 
@@ -1063,3 +1065,54 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS
     response.setHeader('Access-Control-Allow-Origin', '*')
 ```
 
+
+
+
+
+附：
+
+当使用 axios 发送请求时，`.then()` 是 Promise 对象的方法之一，用于处理请求成功的回调。以下是 axios 中 `.then()` 方法的 API：
+
+```js
+axios.get(url)
+  .then(function(response) {
+    // 请求成功的回调，处理返回的数据
+    console.log(response.data);
+  })
+  .catch(function(error) {
+    // 请求失败的回调，处理错误信息
+    console.log(error);
+  });
+
+```
+
+在上述示例中，`.then()` 方法接收一个成功回调函数作为参数，该函数会在请求成功时执行，并将响应数据作为参数传递给回调函数。如果请求失败，则会跳转到 `.catch()` 块中，处理错误信息。
+
+需要注意的是，`.then()` 方法返回的是一个新的 Promise 对象，因此可以使用 Promise 链式调用，继续在后续的 `.then()` 中处理数据或进行其他操作。
+
+
+
+在 axios 中，我们可以通过 HTTP 响应的状态码来判断请求是成功还是失败。一般而言，HTTP 状态码在 200 到 299 的范围内表示请求成功，而其他范围的状态码则表示请求失败。
+
+在使用 axios 发送请求后，可以在 `.then()` 方法中处理请求成功的情况，在 `.catch()` 方法中处理请求失败的情况。
+
+```js
+axios.get('/api/example')
+  .then(function(response) {
+    // 请求成功，可以在这里处理返回的数据
+    console.log(response);
+  })
+  .catch(function(error) {
+    // 请求失败，可以在这里处理错误信息
+    console.log("请求失败", error);
+  });
+
+```
+
+在上述示例中，如果 HTTP 响应的状态码在 200 到 299 的范围内，表示请求成功，成功的回调函数将被调用，并且可以通过 `response` 对象来访问返回的数据。如果状态码不在该范围内，表示请求失败，失败的回调函数将被调用，并且可以通过 `error` 对象来访问错误信息。
+
+需要注意的是，axios 在默认情况下只会将状态码为 2xx 的响应视为成功，其他状态码都视为错误。如果你希望自定义成功和失败的判断条件，可以使用 axios 的拦截器或配置项进行处理
+
+改变请求返回404就是失败的回调
+
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230514160114523.png" alt="image-20230514160114523" style="zoom:50%;" />

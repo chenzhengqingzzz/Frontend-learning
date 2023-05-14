@@ -68,7 +68,7 @@ alert("我是外部的js代码");
 
 ### 内存图
 
-![image-20221009174126851](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221009174126851.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221009174126851.png" alt="image-20221009174126851" />
 
 ```html
 <!DOCTYPE html>
@@ -287,7 +287,7 @@ console.log(newArr5);
 
 ​	输出结果如下：
 
-![image-20221110150330645](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221110150330645.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221110150330645.png" alt="image-20221110150330645" />
 
 ### 7. 冒泡排序
 
@@ -541,14 +541,14 @@ zxy.sing('李香兰');
 
 ​	**输出结果：**
 
-![image-20221115194227747](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221115194227747.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221115194227747.png" alt="image-20221115194227747" />
 
 #### 2.4 构造函数和对象
 
 	* 构造函数： 如Stars()， 抽象了对象的公共部分，封装到了函数里面，它泛指某一大类(class)
 	* 创建对象：如new Stars()，特指某一个，通过new关键字创建对象的过程 我们也成为对象的实例化
 
-![image-20221115195319156](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221115195319156.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221115195319156.png" alt="image-20221115195319156" />
 
 ​	
 
@@ -610,7 +610,7 @@ for(变量名 in 对象名){
 
 ​	**输出结果：**
 
-![image-20221116184027956](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221116184027956.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221116184027956.png" alt="image-20221116184027956" />
 
 ### 小结：
 
@@ -1174,7 +1174,7 @@ for(var k in o){
 console.log('出现次数最多的字符是：' + ch + ',出现次数为：' + max)
 ```
 
-![image-20221126170925892](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126170925892.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126170925892.png" alt="image-20221126170925892" />
 
 #### 6.5 字符串操作方法（重点）
 
@@ -1254,7 +1254,7 @@ console.log(str.replace('a', 'b')); //bndyandy
 
 ​	**复杂数据类型存放到堆里面**
 
-![image-20221126180748936](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126180748936.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126180748936.png" alt="image-20221126180748936" />
 
 ​	**注意：JavaScript中没有堆栈的概念，通过堆栈的方式，可以更容易理解代码的一些执行方式，便于将来学习其他语言。**
 
@@ -1264,14 +1264,14 @@ console.log(str.replace('a', 'b')); //bndyandy
 
  * 值类型变量的数据直接存放在变量（栈空间）中 它存放在栈里面 直接开辟一个空间存放的是值
 
-   ![image-20221126181513100](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126181513100.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126181513100.png" alt="image-20221126181513100" />
 
 #### 7.4 复杂类型的内存分配
 
 * 复杂类型（引用数据类型）：Object、Array、Date等
 * 复杂数据类型的数据首先在栈里面存放地址 十六进制表示 然后这个地址指向堆里面的数据
 
-![image-20221126181453544](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126181453544.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126181453544.png" alt="image-20221126181453544" />
 
 #### 7.5 简单类型传参
 
@@ -1306,15 +1306,15 @@ f1(p);
 console.log(p.name); //4. 张学友
 ```
 
-![image-20221126183009999](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126183009999.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126183009999.png" alt="image-20221126183009999" />
 
-![image-20221126183042950](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126183042950.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221126183042950.png" alt="image-20221126183042950" />
 
 ### 8. Web APIs和JS基础关联性
 
 #### 8.1.1 JS的组成
 
-![image-20221127151545670](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221127151545670.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221127151545670.png" alt="image-20221127151545670" />
 
 ##### 8.1.2 JS基础阶段以及Web APIs阶段
 
@@ -1340,7 +1340,7 @@ console.log(p.name); //4. 张学友
 
 ​	简单理解：**API是给程序员提供的一种工具，以便能更轻松的实现想要完成的功能。**
 
-​	比如手机充电的接口：![image-20221127152820185](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221127152820185.png)
+​	比如手机充电的接口：<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221127152820185.png" alt="image-20221127152820185" />
 
 ​	我们要实现充电这个功能：
 
@@ -1374,7 +1374,7 @@ console.log(p.name); //4. 张学友
 
 #### 10.2 DOM树
 
-![image-20221127155607924](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221127155607924.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221127155607924.png" alt="image-20221127155607924" />
 
 * 文档：一个页面就是一个文档，DOM中使用`document`来表示
 * 元素：页面中的所有标签都是元素，DM中使用`element`来表示
@@ -1891,7 +1891,7 @@ element.innerHTML
 
 ​		③ 算法：利用一个flag变量，来判断flag的值，如果是1就切换为文本框，flag设置为0，如果是0就切换为密码框，flag设置为1
 
-![image-20221130165812282](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221130165812282.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221130165812282.png" alt="image-20221130165812282" />
 
 ```html
 <!DOCTYPE html>
@@ -2084,7 +2084,7 @@ element.innerHTML
 
 ​		可以利用for循环设置一组元素的精灵图背景
 
-​	![image-20221202194024366](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221202194024366.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221202194024366.png" alt="image-20221202194024366" />
 
 ​	① 首先精灵图排列是有规律的
 
@@ -2202,7 +2202,7 @@ element.innerHTML
 
 ​	用户如果离开密码框，里面输入的个数不是6~16，则提示错误信息，否则提示输入正确信息
 
-![image-20221206115417419](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221206115417419.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221206115417419.png" alt="image-20221206115417419" />
 
 ​	① 首先判断的事件是表单失去焦点`onblur`
 
@@ -2278,7 +2278,7 @@ element.innerHTML
 
 ​	操作元素是DOM的核心内容
 
-![image-20221207152027049](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221207152027049.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221207152027049.png" alt="image-20221207152027049" />
 
 ##### 11.5 排他思想
 
@@ -2405,7 +2405,7 @@ element.innerHTML
 
 ​	**案例：表格隔行变色**
 
-![image-20221207162122477](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221207162122477.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221207162122477.png" alt="image-20221207162122477" />
 
 ​	**案例分析**
 
@@ -2899,7 +2899,7 @@ element.innerHTML
 
 ​	HTML DOM树种的所有节点均可通过JavaScript进行访问，所有HTML元素（节点）均可被修改，也可以被创建或删除
 
-![image-20221209145009753](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221209145009753.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221209145009753.png" alt="image-20221209145009753" />
 
 ​	一般地，节点至少拥有`nodeType(节点类型)`、`nodeName(节点名称)`和`nodeValue(节点值)`这三个基本属性
 
@@ -3097,7 +3097,7 @@ console.log(ol.children.length - 1);
 
 ​	**案例：下拉菜单**
 
-![image-20221209184304196](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221209184304196.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221209184304196.png" alt="image-20221209184304196" />
 
 ​	案例分析：
 
@@ -3321,7 +3321,7 @@ document.createElement('tagName')
 
 ​	**案例：简单版发布留言案例**
 
-​	![image-20221209201127909](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221209201127909.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221209201127909.png" alt="image-20221209201127909" />
 
 ​	案例分析：
 
@@ -3475,7 +3475,7 @@ node.cloneNode()
 
 ​	**案例：动态生成表格**
 
-​	![image-20221211140924207](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221211140924207.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221211140924207.png" alt="image-20221211140924207" />
 
 ​	案例分析：
 
@@ -3593,9 +3593,9 @@ node.cloneNode()
 
 ​	**提示：最后一个我们要删除的是a所在的tr，a标签与其的关系可以在此图看出：**
 
-![image-20221211153202901](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221211153202901.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221211153202901.png" alt="image-20221211153202901" />
 
-![image-20221211160819319](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221211160819319.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221211160819319.png" alt="image-20221211160819319" />
 
 #### 11.4.5 三种动态创建元素区别
 
@@ -3812,14 +3812,14 @@ eventTarget.onclick = null
 
 ​	比如我们给div注册了点击事件：
 
-![image-20221212150702783](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221212150702783.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221212150702783.png" alt="image-20221212150702783" />
 
 * 事件冒泡：IE最早提出，事件开始时由最具体的元素接收，然后逐级向上传播到DOM最顶层节点的过程
 * 事件捕获：网景最早提出，由DOM最顶层节点开始，然后逐级乡下传播到最具体的元素接收的过程
 
 ​	我们向水里扔一块石头，首先它会有一个下降的过程，这个过程就可以理解为从最顶层向事件发生的最具体元素（目标点）的捕获过程，之后会产生泡泡，会在最低点（最具体元素）之后漂浮到水面上，这个过程相当于事件冒泡
 
-![image-20221212151154786](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221212151154786.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221212151154786.png" alt="image-20221212151154786" />
 
 ```html
 <!DOCTYPE html>
@@ -3948,7 +3948,7 @@ eventTarget.addEventListener('click', function(event){})
 </html>
 ```
 
-![image-20221212161641666](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221212161641666.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221212161641666.png" alt="image-20221212161641666" />
 
 ##### 13.4.2 事件对象的使用语法
 
@@ -4235,7 +4235,7 @@ document.addEventListener('selectstart', function(e){
 
 ​		要求：当我们在文本框输入内容时，文本框上面自动显示大字号的内容
 
-![image-20221214152249522](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221214152249522.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221214152249522.png" alt="image-20221214152249522" />
 
 ​	案例分析：
 
@@ -4359,7 +4359,7 @@ document.addEventListener('selectstart', function(e){
 
 ​	`BOM`比`DOM`更大，它包含`DOM`
 
-![image-20221214162023744](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221214162023744.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221214162023744.png" alt="image-20221214162023744" />
 
 ​	**`window`对象是浏览器的顶级对象**，它具有双重角色
 
@@ -4617,7 +4617,7 @@ window.setInterval(回调函数, 间隔的毫秒数);
 
 **案例：倒计时**
 
-​	![image-20221214174115487](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221214174115487.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221214174115487.png" alt="image-20221214174115487" />
 
 ​	案例分析：
 
@@ -4946,7 +4946,7 @@ window.clearInterval(intervalID);
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221216155431300.png" alt="image-20221216155431300" style="zoom:50%;" />
 
-![image-20221216160130585](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221216160130585.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221216160130585.png" alt="image-20221216160130585" />
 
 ​	由于主线程不断的重复获得任务、执行任务、再获取任务、再执行，所以这种机制被称为**事件循环（event loop）**
 
@@ -5177,7 +5177,8 @@ if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobi
 
 |                        offset                        |                            style                             |
 | :--------------------------------------------------: | :----------------------------------------------------------: |
-|         `offset`可以得到任意样式表中的样式值         | `style`只能得到行内样式表中的样式值![image-20221221115603547](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221221115603547.png) |
+|         `offset`可以得到任意样式表中的样式值         | `style`只能得到行内样式表中的样式值<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221221115603547.png" alt="image-20221221115603547" />
+ |
 |          `offset`系列获得的数值是没有单位的          |            `style.width`获得的是带有单位的字符串             |
 |       `offsetWidth`包括`padding+border+width`        |        `style.width`获得不包含`padding`和`border`的值        |
 |   `offsetWidth`等属性是只读属性，只能获取不能赋值    |        `style.width`是可读写属性，可以获取也可以赋值         |
@@ -8189,9 +8190,9 @@ $('div').toggleClass('current')
 
 #### 18.3 jQuery效果
 
-​	jQuery给我们封装了很多动画效果，最为常见的如下：
 
-![image-20230217154902422](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230217154902422.png)
+​	jQuery给我们封装了很多动画效果，最为常见的如下：
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230217154902422.png" alt="image-20230217154902422" />
 
 ##### 18.3.1 显示隐藏效果
 
@@ -9324,7 +9325,7 @@ console.log(newArr1);
 
 ​	输出结果：
 
-![image-20221110141944459](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221110141944459.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221110141944459.png" alt="image-20221110141944459" />
 
 ​	**如果我们尝试对原数组中的元素进行修改，会有什么效果？**
 
@@ -9341,7 +9342,7 @@ console.log(newArr2)
 
 ​	输出结果如下：
 
-![image-20221110142452290](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221110142452290.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221110142452290.png" alt="image-20221110142452290" />
 
 ​	会发现数据是不会发生改变的，也就是说：filter方法是对原数组进行过滤，返回到一个新数组中去，不会影响原始的数组
 
@@ -9388,7 +9389,7 @@ console.log(newArr);
 
 ​	输出结果：
 
-![image-20221109203355340](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221109203355340.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221109203355340.png" alt="image-20221109203355340" />
 
 ​	所以，map方法是对原数组中的元素进行处理、修改等操作，然后返回一个新的数组对象
 
@@ -9411,7 +9412,7 @@ console.log(newArr3);
 
 ​	输出如下：
 
-![image-20221110144055247](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221110144055247.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221110144055247.png" alt="image-20221110144055247" />
 
 ### 最后总结：
 

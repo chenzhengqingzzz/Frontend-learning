@@ -28,7 +28,7 @@
 
 ​	CSS规则有两个主要的部分构成：**选择器**以及**一条或多条声明**
 
-![image-20221026194627360](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221026194627360.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221026194627360.png" alt="image-20221026194627360" />
 
 	* **选择器**是用于指定CSS样式的**HTML标签**，花括号内是对该对象设置的具体样式
 	* 属性和属性值以“键值对”的方式呈现
@@ -93,7 +93,7 @@ color: pink;
 
 ​	选择器（选择符）的作用就是根据不同需求把不同的标签选出来，简单来说就是**选择标签**用的
 
-![image-20221026202109517](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221026202109517.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221026202109517.png" alt="image-20221026202109517" />
 
 ​	以上CSS做了两件事：
 
@@ -170,7 +170,7 @@ color: pink;
 
 ​	我们可以给一个标签指定**多个类名**，从而达到更多的选择目的。这些类名都可以选出这个标签
 
-![image-20221027190917311](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221027190917311.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221027190917311.png" alt="image-20221027190917311" />
 
 ​	1. 多类名使用方式
 
@@ -424,7 +424,7 @@ p {
 }
 ```
 
-![image-20221030192241027](/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221030192241027.png)
+<img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20221030192241027.png" alt="image-20221030192241027" />
 
 #### 4.6 文本属性总结
 
