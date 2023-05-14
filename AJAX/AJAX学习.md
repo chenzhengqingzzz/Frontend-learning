@@ -1113,6 +1113,6 @@ axios.get('/api/example')
 
 需要注意的是，axios 在默认情况下只会将状态码为 2xx 的响应视为成功，其他状态码都视为错误。如果你希望自定义成功和失败的判断条件，可以使用 axios 的拦截器或配置项进行处理
 
-改变请求返回404就是失败的回调
+改变请求返回404就是失败的回调。
 
 <img src="/Users/chenzhengqing/Library/Application Support/typora-user-images/image-20230514160114523.png" alt="image-20230514160114523" style="zoom:50%;" />
